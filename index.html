@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Css files -->
+  <link rel="stylesheet" href="./styles/main.css"/>
+  <link rel="stylesheet" href="./styles/cart.css"/>
+  <link rel="stylesheet" href="./styles/product.css"/>
+  <link rel="stylesheet" href="./styles/gallery.css"/>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <nav>
+      <div class="menu-btn">
+        <button></button>
+      </div>
+      <div>
+        <img src="./images/logo.svg" alt="logo"/>
+      </div>
+      <ul>
+        <button class="close-menu-btn"></button>
+        <li>
+          <a href="">Collections</a>
+        </li>
+        <li>
+          <a href="">Men</a>
+        </li>
+        <li>
+          <a href="">Women</a>
+        </li>
+        <li>
+          <a href="">About</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+      </ul>
+      <div class="center nav-option">
+        <div>
+          <button class="cart-btn">
+            <span class="cart-num"></span>
+          </button>
+        </div>
+        <div>
+          <button class="avatar-btn"></button>
+        </div>
+      </div>
+      <!-- Cart -->
+      <div class="cart" id="cart">
+        <p>Cart</p>
+        <!-- Items go here -->
+        <div id="items"></div>
+        <!-- end of items  -->
+        <button class="checkout">Checkout</button>
+      </div>
+      <!-- End cart -->
+    </nav>
+    <!-- gallery -->
+      <div id="gallery-content" class="gallery-content">
+        <button class="close" id="gallery-close">
+          <img src="./images/icon-close-orange.svg" alt="close" width="45px"/>
+        </button>
+        <div class="center">
+          <img src="./images/image-product-1.jpg" id="showed"/>
+          <button id="next" class="center">
+            <img src="./images/icon-next.svg" alt="next"/>
+          </button>
+          <button id="previous" class="center">
+            <img src="./images/icon-previous.svg" alt="previous"/>
+          </button>
+        </div>
+        <div id="thumbnails">
+          <img src="./images/image-product-1-thumbnail.jpg" class="active-img"/>
+          <img src="./images/image-product-2-thumbnail.jpg"/>
+          <img src="./images/image-product-3-thumbnail.jpg"/>
+          <img src="./images/image-product-4-thumbnail.jpg"/>
+        </div>
+      </div>
+      <span></span>
+    <!-- gallery end -->
+    <section>
+      <div>
+        <div class="relative">
+          <button id="next-1" class="center next">
+            <img src="./images/icon-next.svg" alt="next" />
+          </button>
+          <img src="./images/image-product-1.jpg" id="gallery"/>
+          <button id="previous-1" class="center previous">
+            <img src="./images/icon-previous.svg" alt="previous" />
+          </button>
+        </div>
+        <div id="thumbnails-1">
+          <img src="./images/image-product-1-thumbnail.jpg" class="active-img"/>
+          <img src="./images/image-product-2-thumbnail.jpg"/>
+          <img src="./images/image-product-3-thumbnail.jpg"/>
+          <img src="./images/image-product-4-thumbnail.jpg"/>
+        </div>
+      </div>
+      <div>
+        <span>Sneaker Company</span>
+        <h2>Fall Limited Edition Sneakers</h2>
+        <p>
+            These low-profile sneakers are your perfect casual wear companion. Featuring a
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="strong-del">
+          <strong>$125.00</strong>
+          <del>$250.00</del>
+        </div>
+        <section class="last">
+          <div>
+            <button class="center" id="minus"></button>
+            <span class="center" id="val">1</span>
+            <button class="center" id="plus"></button>
+          </div>
+          <button class="center add-to-cart" id="add-to-cart">
+            <img src="./images/icon-cart-white.svg" alt="cart"/>
+            Add to cart
+          </button>
+        </section>
+      </div>
+    </section>
+  </main>
+  <!-- Collections
+  Men
+  Women
+  About
+  Contact
+
+  Sneaker Company
+
+  Fall Limited Edition Sneakers
+
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./main.js"></script>
+</body>
+</html>
